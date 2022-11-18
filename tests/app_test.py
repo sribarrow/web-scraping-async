@@ -1,7 +1,7 @@
 """
     Unit test case for main module
 """
-from src.main import main
+from src.app import main
 
 
 def test_main_year() -> None:

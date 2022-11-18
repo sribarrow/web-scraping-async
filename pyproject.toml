@@ -18,12 +18,15 @@ pre-commit = "^2.20.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"
-
-# [tool.poetry.scripts]
-# run_main = "python_template_repo.main:main"
+coverage = "^6.5.0"
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
+
+# [tool.poetry.scripts]
+# test = "coverage run -m pytest"
+# cov = "coverage report -m"
+# cov_report = "coverage html"
 
 [build-system]
 requires = ["poetry>=0.12"]
